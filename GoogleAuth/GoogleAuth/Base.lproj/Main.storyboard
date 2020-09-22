@@ -20,6 +20,9 @@
                                 <rect key="frame" x="177" y="417" width="60" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Sign Out"/>
+                                <connections>
+                                    <action selector="signOutWithButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pJ8-8O-O5j"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>

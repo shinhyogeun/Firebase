@@ -23,6 +23,16 @@ class ViewController: UIViewController{
         view.addSubview(loginButton)
         loginButton.frame = CGRect(x: 16, y: 116+16, width: view.frame.width-32, height: 50)
     }
+    
+    @IBAction func signOut(button:UIButton){
+        let firebaseAuth = Auth.auth()
+        do{
+            try firebaseAuth.signOut()
+            GIDSignIn.sharedInstance()?.disconnect()
+        }catch let signOutError as NSError{
+           print("Error signing out: @", signOutError)
+        }
+    }
 
 }
 

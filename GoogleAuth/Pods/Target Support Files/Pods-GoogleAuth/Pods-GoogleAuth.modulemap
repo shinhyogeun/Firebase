@@ -1,0 +1,6 @@
+framework module Pods_GoogleAuth {
+  umbrella header "Pods-GoogleAuth-umbrella.h"
+
+  export *
+  module * { export * }
+}
