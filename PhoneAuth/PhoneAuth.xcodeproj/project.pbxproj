@@ -1,0 +1,428 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		150D3052251A477800ED41EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150D3051251A477800ED41EB /* AppDelegate.swift */; };
+		150D3054251A477800ED41EB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150D3053251A477800ED41EB /* SceneDelegate.swift */; };
+		150D3056251A477800ED41EB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150D3055251A477800ED41EB /* ViewController.swift */; };
+		150D3059251A477800ED41EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 150D3057251A477800ED41EB /* Main.storyboard */; };
+		150D305B251A477B00ED41EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 150D305A251A477B00ED41EB /* Assets.xcassets */; };
+		150D305E251A477B00ED41EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 150D305C251A477B00ED41EB /* LaunchScreen.storyboard */; };
+		150D3067251A47D100ED41EB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 150D3066251A47D100ED41EB /* GoogleService-Info.plist */; };
+		150D308B251A4CCC00ED41EB /* PhoneNumberLogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150D308A251A4CCC00ED41EB /* PhoneNumberLogInViewController.swift */; };
+		150D308E251A50A800ED41EB /* PhoneNumberVerifyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150D308D251A50A800ED41EB /* PhoneNumberVerifyViewController.swift */; };
+		EDEE7FB024AE874C3F31B6FF /* Pods_PhoneAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F4D32AF9C9B6D688F21CB57 /* Pods_PhoneAuth.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		150D304E251A477800ED41EB /* PhoneAuth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhoneAuth.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		150D3051251A477800ED41EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		150D3053251A477800ED41EB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		150D3055251A477800ED41EB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		150D3058251A477800ED41EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		150D305A251A477B00ED41EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		150D305D251A477B00ED41EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		150D305F251A477B00ED41EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		150D3066251A47D100ED41EB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		150D308A251A4CCC00ED41EB /* PhoneNumberLogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberLogInViewController.swift; sourceTree = "<group>"; };
+		150D308D251A50A800ED41EB /* PhoneNumberVerifyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberVerifyViewController.swift; sourceTree = "<group>"; };
+		3F4D32AF9C9B6D688F21CB57 /* Pods_PhoneAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhoneAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		88F5881F18AF4D02AF89E2A8 /* Pods-PhoneAuth.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhoneAuth.debug.xcconfig"; path = "Target Support Files/Pods-PhoneAuth/Pods-PhoneAuth.debug.xcconfig"; sourceTree = "<group>"; };
+		A025C4FE50E7802B08B9E9A9 /* Pods-PhoneAuth.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhoneAuth.release.xcconfig"; path = "Target Support Files/Pods-PhoneAuth/Pods-PhoneAuth.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		150D304B251A477800ED41EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDEE7FB024AE874C3F31B6FF /* Pods_PhoneAuth.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0B00D66C70227253B39C5A20 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				88F5881F18AF4D02AF89E2A8 /* Pods-PhoneAuth.debug.xcconfig */,
+				A025C4FE50E7802B08B9E9A9 /* Pods-PhoneAuth.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		150D3045251A477800ED41EB = {
+			isa = PBXGroup;
+			children = (
+				150D3050251A477800ED41EB /* PhoneAuth */,
+				150D304F251A477800ED41EB /* Products */,
+				0B00D66C70227253B39C5A20 /* Pods */,
+				D61910139CD693A89DF74A7A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		150D304F251A477800ED41EB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				150D304E251A477800ED41EB /* PhoneAuth.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		150D3050251A477800ED41EB /* PhoneAuth */ = {
+			isa = PBXGroup;
+			children = (
+				150D3066251A47D100ED41EB /* GoogleService-Info.plist */,
+				150D3051251A477800ED41EB /* AppDelegate.swift */,
+				150D308A251A4CCC00ED41EB /* PhoneNumberLogInViewController.swift */,
+				150D3053251A477800ED41EB /* SceneDelegate.swift */,
+				150D3055251A477800ED41EB /* ViewController.swift */,
+				150D3057251A477800ED41EB /* Main.storyboard */,
+				150D305A251A477B00ED41EB /* Assets.xcassets */,
+				150D305C251A477B00ED41EB /* LaunchScreen.storyboard */,
+				150D308D251A50A800ED41EB /* PhoneNumberVerifyViewController.swift */,
+				150D305F251A477B00ED41EB /* Info.plist */,
+			);
+			path = PhoneAuth;
+			sourceTree = "<group>";
+		};
+		D61910139CD693A89DF74A7A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3F4D32AF9C9B6D688F21CB57 /* Pods_PhoneAuth.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		150D304D251A477800ED41EB /* PhoneAuth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 150D3062251A477B00ED41EB /* Build configuration list for PBXNativeTarget "PhoneAuth" */;
+			buildPhases = (
+				5A09913834589663993D4B5E /* [CP] Check Pods Manifest.lock */,
+				150D304A251A477800ED41EB /* Sources */,
+				150D304B251A477800ED41EB /* Frameworks */,
+				150D304C251A477800ED41EB /* Resources */,
+				8AD8ED2AB1A214DBA3CBC7F3 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PhoneAuth;
+			productName = PhoneAuth;
+			productReference = 150D304E251A477800ED41EB /* PhoneAuth.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		150D3046251A477800ED41EB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					150D304D251A477800ED41EB = {
+						CreatedOnToolsVersion = 12.0;
+					};
+				};
+			};
+			buildConfigurationList = 150D3049251A477800ED41EB /* Build configuration list for PBXProject "PhoneAuth" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 150D3045251A477800ED41EB;
+			productRefGroup = 150D304F251A477800ED41EB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				150D304D251A477800ED41EB /* PhoneAuth */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		150D304C251A477800ED41EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				150D305E251A477B00ED41EB /* LaunchScreen.storyboard in Resources */,
+				150D3067251A47D100ED41EB /* GoogleService-Info.plist in Resources */,
+				150D305B251A477B00ED41EB /* Assets.xcassets in Resources */,
+				150D3059251A477800ED41EB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5A09913834589663993D4B5E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PhoneAuth-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8AD8ED2AB1A214DBA3CBC7F3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PhoneAuth/Pods-PhoneAuth-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PhoneAuth/Pods-PhoneAuth-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PhoneAuth/Pods-PhoneAuth-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		150D304A251A477800ED41EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				150D3056251A477800ED41EB /* ViewController.swift in Sources */,
+				150D308E251A50A800ED41EB /* PhoneNumberVerifyViewController.swift in Sources */,
+				150D3052251A477800ED41EB /* AppDelegate.swift in Sources */,
+				150D308B251A4CCC00ED41EB /* PhoneNumberLogInViewController.swift in Sources */,
+				150D3054251A477800ED41EB /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		150D3057251A477800ED41EB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				150D3058251A477800ED41EB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		150D305C251A477B00ED41EB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				150D305D251A477B00ED41EB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		150D3060251A477B00ED41EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		150D3061251A477B00ED41EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		150D3063251A477B00ED41EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88F5881F18AF4D02AF89E2A8 /* Pods-PhoneAuth.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2C96RNDN63;
+				INFOPLIST_FILE = PhoneAuth/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shinhyogeun.PhoneAuth;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		150D3064251A477B00ED41EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A025C4FE50E7802B08B9E9A9 /* Pods-PhoneAuth.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2C96RNDN63;
+				INFOPLIST_FILE = PhoneAuth/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shinhyogeun.PhoneAuth;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		150D3049251A477800ED41EB /* Build configuration list for PBXProject "PhoneAuth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				150D3060251A477B00ED41EB /* Debug */,
+				150D3061251A477B00ED41EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		150D3062251A477B00ED41EB /* Build configuration list for PBXNativeTarget "PhoneAuth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				150D3063251A477B00ED41EB /* Debug */,
+				150D3064251A477B00ED41EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 150D3046251A477800ED41EB /* Project object */;
+}

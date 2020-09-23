@@ -10,28 +10,27 @@ import Firebase
 import FBSDKLoginKit
 
 class ViewController: UIViewController, LoginButtonDelegate {
-    func loginButton(_ loginButton: FBLoginButton, didCompleteWith result: LoginManagerLoginResult?, error: Error?) {
-        <#code#>
-    }
     
-    func loginbutton(_ loginButton: FBLoginButton, didCompleteWith result: LoginManagerLoginResult?, error: Error?) {
+    func loginButton(_ loginButton: FBLoginButton, didCompleteWith result: LoginManagerLoginResult?, error: Error?) {
+        
         if error == nil{
             if ((result?.isCancelled) != nil){
                 return
             }
         }
+        
         if let error = error {
             print(error)
             return
         }
         
         let credential = FacebookAuthProvider.credential(withAccessToken: AccessToken.current!.tokenString)
-        
-        Auth.auth().signIn(with: credential) { (authResult, error) in
-            if let error = error{
-                print(error); return
+        Auth.auth().signInAndRetrieveData(with: credential) {(authResult, error) in
+            if let error = error {
+                print("Unable to login to Facebook: error [\(error)]")
+                return
             }
-            print(String(describing: authResult?.user.uid))
+            print("Facebook user is signed in \(String(describing: authResult?.user.uid))")
         }
     }
     
