@@ -33,15 +33,18 @@ class ViewController: UIViewController, GIDSignInUIDelegate {
         guard let key =
                 ref.child("user").child(Auth.auth().currentUser!.uid).child("post")
                 .childByAutoId().key else{return}
+        
         let post = ["index" : String(self.index),
                     "uid" : Auth.auth().currentUser?.uid,
                     "author" : Auth.auth().currentUser?.email,
                     "title" : "My Dog",
                     "body" : "Dummy Blog Post"]
-        let childUpdate = ["/users/\(Auth.auth().currentUser!.uid)/posts/\(key)" : post]
+        
+        let childUpdate = ["/users2/\(Auth.auth().currentUser!.uid)/posts/\(key)" : post]
         ref.updateChildValues(childUpdate)
         index += 1
     }
+    
     @IBAction func read(with:UIStoryboardSegue){
         
     }
