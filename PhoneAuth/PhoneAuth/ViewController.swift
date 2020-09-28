@@ -32,7 +32,7 @@ class ViewController: UIViewController {
     @IBAction func verifyAndSignInPhone(segue:UIStoryboardSegue){
         let phoneVerifyController = segue.source as! PhoneNumberVerifyViewController
         let verificationCode:String = phoneVerifyController.verificationId.text!
-        guard let verificationID = UserDefaults.standard.string(forKey: "authVerificationID") else { return print("여기가 이상해") }
+        guard let verificationID = UserDefaults.standard.string(forKey: "authVerificationID") else { return print("Something Wierd") }
         
         let credential = PhoneAuthProvider.provider().credential(withVerificationID: verificationID, verificationCode: verificationCode)
         
@@ -44,6 +44,5 @@ class ViewController: UIViewController {
             print("Phone Number user is signed in \(String(describing: authResult?.user.uid)))")
         }
     }
-
 }
 
