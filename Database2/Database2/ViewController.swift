@@ -44,7 +44,7 @@ class ViewController: UIViewController, GIDSignInUIDelegate {
                     "body" : "Dummy Blog Post"]
         //[위치:무엇을]
         let childUpdate = ["/users/\(Auth.auth().currentUser!.uid)/posts3/\(key)" : post,
-                           "/users/posts2/\(key)" : post]
+                           "/users/\(Auth.auth().currentUser!.uid)/posts2/\(key)" : post]
         //저장해라!
         ref.updateChildValues(childUpdate)
         index += 1
@@ -68,8 +68,8 @@ class ViewController: UIViewController, GIDSignInUIDelegate {
             group.notify(queue: .main){
             }
         }
-        
     }
+    
     @IBAction func update(with:UIStoryboardSegue){
         let postRef : DatabaseReference! = ref.child("users").child(Auth.auth().currentUser!.uid).child("posts")
         postRef.observeSingleEvent(of: DataEventType.value) { (snapshot, key) in
@@ -92,17 +92,25 @@ class ViewController: UIViewController, GIDSignInUIDelegate {
             group.notify(queue: .main){
                 
             }
-            
-            
-            
-            
-            
-            
         }
-        
     }
+    
     @IBAction func delete(with:UIStoryboardSegue){
+        let postRef:DatabaseReference = ref.child("users").child(Auth.auth().currentUser!.uid).child("posts")
         
+        postRef.observeSingleEvent(of: DataEventType.value) { (snapshot, key) in
+            let group = DispatchGroup()
+            let children : NSEnumerator = snapshot.children
+            group.enter()
+            for child in children{
+                let childSnapShot = child as? DataSnapshot
+                postRef.child(childSnapShot!.key).removeValue()
+            }
+            group.leave()
+            group.notify(queue: .main){
+                self.index = 0
+            }
+        }
     }
     @IBAction func signOut(with: UIStoryboardSegue){
         GIDSignIn.sharedInstance()?.disconnect()
