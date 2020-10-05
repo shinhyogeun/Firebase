@@ -51,7 +51,7 @@ class ViewController: UIViewController, GIDSignInUIDelegate {
     }
     
     @IBAction func read(with:UIStoryboardSegue){
-        let postRef : DatabaseQuery! = ref.child("users").child(Auth.auth().currentUser!.uid).child("posts").queryOrdered(byChild: "/index")
+        let postRef : DatabaseQuery! = ref.child("users").child(Auth.auth().currentUser!.uid).child("posts2").queryOrdered(byChild: "/index")
         postRef.observeSingleEvent(of: DataEventType.value) { (snapshot, key) in
             let group = DispatchGroup()
             let children : NSEnumerator = snapshot.children
